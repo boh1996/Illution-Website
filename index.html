@@ -17,72 +17,78 @@
 	</head>
 	<body>
 
-		<div class="navbar navbar-inverse navbar-fixed-top">
-	      <div class="navbar-inner">
-	        <div class="container">
-	         	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	            	<span class="icon-th-list icon-white"></span>
-	          	</button>
-	          	<a class="brand" href="#">illution</a>
-	          	<div class="nav-collapse collapse">
-		            <ul class="nav">
-		              	<li class="active">
-		                	<a href="">Home</a>
-		              	</li>
-		            </ul>
-	          	</div>
-	        </div>
-	      </div>
-	    </div>
-
-		<div class="jumbotron masthead">
-			<div class="container">
-				<h1>
-					illution
-				</h1>
-				<p>
-					Spelled wrong on purpose.
-				</p>
-				<p>
-					<a href="" class="btn btn-primary btn-large" >View our Gallery</a>
-				</p>
-				<ul class="masthead-links">
-					<li>
-						<a href="">Blog</a>
-					</li>
-					<li>
-						&copy; Illution 2013
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="bs-docs-social">
-		  	<div class="container">
-		    	<ul class="bs-docs-social-buttons">
-			      	<li class="follow-btn">
-			        	<a href="https://twitter.com/illution" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @illution</a>
-			      	</li>
-		    	</ul>
-		  	</div>
-		</div>
-
-		<footer class="footer">
-		    <div class="container">
-		        <p class="pull-right">
-		        	<a href="#">
-		        		Back to top
-		        	</a>
-		        </p>
-		        <p>
-		        	This website is built by <a href="http://twitter.com/fredefl">Frederik Lassen</a> and <a href="https://twitter.com/bohansthomsen">Bo Thomsen</a>,
-		        	we are based in Copenhagen, Denmark.
-		        </p>
+		<div id="home">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+		      <div class="navbar-inner">
+		        <div class="container">
+		         	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		            	<span class="icon-th-list icon-white"></span>
+		          	</button>
+		          	<a class="brand" href="#">illution</a>
+		          	<div class="nav-collapse collapse">
+			            <ul class="nav">
+			              	<li class="active">
+			                	<a data-page="home">Home</a>
+			              	</li>
+			            </ul>
+		          	</div>
+		        </div>
+		      </div>
 		    </div>
-	    </footer>
 
-		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+			<div class="jumbotron masthead">
+				<div class="container">
+					<h1>
+						illution
+					</h1>
+					<p>
+						Spelled wrong on purpose.
+					</p>
+					<p>
+						<a data-page="gallery" class="btn btn-primary btn-large">View our Gallery</a>
+					</p>
+					<ul class="masthead-links">
+						<li>
+							<a href="">Blog</a>
+						</li>
+						<li>
+							&copy; Illution 2013
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="bs-docs-social">
+			  	<div class="container">
+			    	<ul class="bs-docs-social-buttons">
+				      	<li class="follow-btn">
+				        	<a href="https://twitter.com/illution" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @illution</a>
+				      	</li>
+			    	</ul>
+			  	</div>
+			</div>
+
+			<footer class="footer">
+			    <div class="container">
+			        <p class="pull-right">
+			        	<a href="#">
+			        		Back to top
+			        	</a>
+			        </p>
+			        <p>
+			        	This website is built by <a href="http://twitter.com/fredefl">Frederik Lassen</a> and <a href="https://twitter.com/bohansthomsen">Bo Thomsen</a>,
+			        	we are based in Copenhagen, Denmark.
+			        </p>
+			    </div>
+		    </footer>
+		</div>
+
+		<script src="http://platform.twitter.com/widgets.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/signals.min.js"></script>
+		<script src="js/crossroads.min.js"></script>
+		<script src="js/jquery.history.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
