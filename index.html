@@ -14,29 +14,35 @@
 		<script>
 			if (location.hostname == "192.168.1.12") { document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=2"></' + 'script>') }
 		</script>
-		<script type="text/javascript">var root = "http://192.168.1.12/";</script>
+		<script type="text/javascript">var root = "http://192.168.1.12/illution/";</script>
 	</head>
 	<body>
 
-		<div id="home" class="active_page">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-		      <div class="navbar-inner">
-		        <div class="container">
-		         	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		            	<span class="icon-th-list icon-white"></span>
-		          	</button>
-		          	<a class="brand" href="#">illution</a>
-		          	<div class="nav-collapse collapse">
-			            <ul class="nav">
-			              	<li class="active">
-			                	<a data-page="home">Home</a>
-			              	</li>
-			            </ul>
-		          	</div>
-		        </div>
-		      </div>
-		    </div>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="navbar-inner">
+	        <div class="container">
+	         	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	            	<span class="icon-th-list icon-white"></span>
+	          	</button>
+	          	<a class="brand" href="#">illution</a>
+	          	<div class="nav-collapse collapse">
+		            <ul class="nav">
+		              	<li>
+		                	<a data-page="home">Home</a>
+		              	</li>
+		              	<li>
+		              		<a data-page="gallery">Gallery</a>
+		              	</li>
+		              	<li>
+		              		<a href="https://ci.illution.dk">Computer Info</a>
+		              	</li>
+		            </ul>
+	          	</div>
+	        </div>
+	      </div>
+	    </div>
 
+		<div id="home" class="active_page">
 			<div class="jumbotron masthead">
 				<div class="container">
 					<h1>
@@ -50,7 +56,10 @@
 					</p>
 					<ul class="masthead-links">
 						<li>
-							<a href="">Blog</a>
+							<a data-page="blog">Blog</a>
+						</li>
+						<li>
+							<a href="">Contact</a>
 						</li>
 						<li>
 							&copy; Illution 2013
@@ -63,7 +72,7 @@
 			  	<div class="container">
 			    	<ul class="bs-docs-social-buttons">
 				      	<li class="follow-btn">
-				        	<a href="https://twitter.com/illution" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @illution</a>
+				        	
 				      	</li>
 			    	</ul>
 			  	</div>
@@ -82,6 +91,15 @@
 			        </p>
 			    </div>
 		    </footer>
+		</div>
+
+		<div id="gallery" class="disabled_page">
+			<header class="jumbotron subhead" id="overview">
+			  	<div class="container">
+			    	<h1>Gallery</h1>
+			    	<p class="lead">All the different services that we haven't build yet!</p>
+			  	</div>
+			</header>
 		</div>
 
 		<script src="http://platform.twitter.com/widgets.js"></script>

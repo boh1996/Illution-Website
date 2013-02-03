@@ -1,0 +1,9 @@
+.disabled_page{
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+[data-page] {
+	cursor: pointer;
+}

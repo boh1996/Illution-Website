@@ -1,3 +1,23 @@
+var History = window.History;
+$('[data-page]').on("click",function () {
+	var url = "";
+
+	if ( $(this).attr("data-toggle") == undefined ) {
+	  	event.preventDefault();
+
+	  	if (event.target.nodeName == 'A') {
+		   	url = event.target.getAttribute('data-page');
+
+		   	if ( url == "-back" ) {
+		   		History.back();
+		   		return;
+		   	}
+
+		    History.pushState(null,$("title").html(), root+url);
+		}
+	}
+});
+
 History.Adapter.bind(window,'statechange',function(){
 	crossroads.parse(getPage());
 	crossroads.resetState();
@@ -8,8 +28,16 @@ $(document).ready(function() {
 	crossroads.resetState();
 });
 
+crossroads.addRoute("gallery", function () {
+	showPage("gallery");
+});
+
+crossroads.addRoute("home", function () {
+	showPage("home");
+});
+
 crossroads.addRoute("", function () {
-	
+	showPage("home");
 });
 
 /**
@@ -24,12 +52,7 @@ function showPage (newPage, title) {
    	if ($("#"+newPage).length > 0) {
    		$(".active_page").addClass("disabled_page").removeClass("active_page");
    		$("#"+newPage).removeClass("disabled_page").addClass("active_page");
-   		$("title").html(title);
-   		if ($('a[data-target="'+newPage+'"]').length > 0 && !$('a[data-target="'+newPage+'"]').parent("li").hasClass("active")) {
-   			if ($('a[data-target="'+newPage+'"]').attr("data-no-active") != "true") {
-   				$('a[data-target="'+newPage+'"]').parent("li").addClass("active");
-   			}
-   		}
+   		$('a[data-page="'+newPage+'"]').parent("li").addClass("active");
    	}
 }
 
