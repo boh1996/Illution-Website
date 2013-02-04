@@ -13,15 +13,12 @@
 		<link rel="stylesheet" type="text/css" href="css/docs.css">
 		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
 		<script type="text/javascript">
-			if (location.protocol === 'https:') {
-				var protocol = "https";
-			} else {
-				var protocol = "http";
+			if ( window.location.host != "illution.dk" ) {
+				document.write('<script src="'+ location.protocol+'//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=2"></' + 'script>');
 			}
-			document.write('<script src="'+protocol+'://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=2"></' + 'script>');
-    		var root = protocol+"://" + location.host + "/illution/";
+    		var root =  location.protocol+"//" + location.host + "/illution/";
 		</script>
-		<script type="text/javascript">var root = protocol+"://" + location.host + "/illution/";</script>
+		<script type="text/javascript">var root =  location.protocol+"//" + location.host + "/illution/";</script>
 	</head>
 	<body>
 
