@@ -7,3 +7,7 @@
 [data-page] {
 	cursor: pointer;
 }
+
+.nav-collapse li a {
+	font-weight: bold;
+}
