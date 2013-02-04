@@ -47,13 +47,30 @@ crossroads.addRoute("", function () {
 function showPage (newPage, title) {
 	$("#loading-background").hide();
 	$("#loading").hide();
-	var currentPage = $(".active_page");
+	var currentPage = $(".active-page");
 	$(".active").removeClass("active");
    	if ($("#"+newPage).length > 0) {
-   		$(".active_page").addClass("disabled_page").removeClass("active_page");
-   		$("#"+newPage).removeClass("disabled_page").addClass("active_page");
+   		$(".active-page").addClass("disabled-page").removeClass("active-page");
+   		$("#"+newPage).removeClass("disabled-page").addClass("active-page");
    		$('a[data-page="'+newPage+'"]').parent("li").addClass("active");
    	}
+}
+
+/**
+ * This function changes the sub page
+ * @param  {string} id The id attribute of the new sub page
+ * @param {string} group An optional subpage group, use data-page-group to declare a div member of a page group
+ */
+function changeSubPage ( id, group ) {
+	if ( $("#"+id).length > 0 ) {
+		if ( typeof group == "undefined" ) {
+			$(".active-sub-page").addClass(".disabled-sub-page").removeClass(".active-sub-page");
+			$("#"+id).addClass(".active-sub-page").removeClass(".disabled-sub-page");
+		} else {
+			$('.active-sub-page[data-page-group="'+group+'"]').addClass(".disabled-sub-page").removeClass(".active-sub-page");
+			$("#"+id).addClass(".active-sub-page").removeClass(".disabled-sub-page");
+		}
+	}	
 }
 
 /**
