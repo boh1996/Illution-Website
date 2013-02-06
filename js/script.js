@@ -37,6 +37,10 @@ crossroads.addRoute("home", function () {
 	showPage("home");
 });
 
+crossroads.addRoute("about-us", function () {
+	showPage("about_us");
+});
+
 crossroads.addRoute("", function () {
 	showPage("home");
 });
