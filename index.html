@@ -3,10 +3,10 @@
 	<head>
 		<title>Illution</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="Illution">
-    	<meta name="author" content="Bo Thomsen and Frederik Lassen">
+		<meta name="description" content="Illution">
+		<meta name="author" content="Bo Thomsen and Frederik Lassen">
 
-    	<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
@@ -17,35 +17,38 @@
 			if ( window.location.host != "illution.dk" ) {
 				document.write('<script src="'+ location.protocol+'//' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=2"></' + 'script>');
 			}
-    		var root =  location.protocol+"//" + location.host + "/illution/";
+			var root =  location.protocol+"//" + location.host + "/illution/";
 		</script>
 		<script type="text/javascript">var root =  location.protocol+"//" + location.host + "/illution/";</script>
 	</head>
 	<body>
-
 		<div class="navbar navbar-inverse navbar-fixed-top">
-	      	<div class="navbar-inner">
-	        	<div class="container">
-		         	<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		            	<span class="icon-th-list icon-white"></span>
-		          	</button>
-		          	<a class="brand" href="#">illution</a>
-		          	<div class="nav-collapse collapse">
-			            <ul class="nav">
-			              	<li>
-			                	<a data-page="home">Home</a>
-			              	</li>
-			              	<li>
-			              		<a data-page="gallery">Gallery</a>
-			              	</li>
-			              	<li>
-			              		<a data-page="about-us">About us</a>
-			              	</li>
-			            </ul>
-		          	</div>
-	        	</div>
-	      </div>
-	    </div>
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-th-list icon-white"></span>
+					</button>
+					<a class="brand" href="#">illution</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li>
+								<a data-page="home">Home</a>
+							</li>
+							<li>
+								<a data-page="gallery">Gallery</a>
+							</li>
+							<li>
+								<a data-page="about-us">About us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--#######################
+			######## HOME #########
+			####################### -->
 
 		<div id="home" class="active-page">
 			<div class="jumbotron masthead">
@@ -76,47 +79,37 @@
 			</div>
 
 			<div class="bs-docs-social">
-			  	<div class="container">
-			    	<ul class="bs-docs-social-buttons">
-				      	<li class="follow-btn">
-				        	
-				      	</li>
-			    	</ul>
-			  	</div>
+				<div class="container">
+					<ul class="bs-docs-social-buttons">
+						<li class="follow-btn">
+							
+						</li>
+					</ul>
+				</div>
 			</div>
-
-			<footer class="footer">
-			    <div class="container">
-			        <p class="pull-right">
-			        	<a href="#">
-			        		Back to top
-			        	</a>
-			        </p>
-			        <p>
-			        	This website is built by <a href="https://twitter.com/bohansthomsen">Bo Thomsen</a> and <a href="http://twitter.com/fredefl">Frederik Lassen</a>,
-			        	we are based in Copenhagen, Denmark.
-			        </p>
-			    </div>
-		    </footer>
 		</div>
+
+		<!--#######################
+			######## ABOUT ########
+			####################### -->
 
 		<div id="about-us" class="disabled-page">
 			<header class="jumbotron subhead" id="overview">
-			  	<div class="container">
-			    	<h1>About Us</h1>
-			    	<p class="lead">Who are you, may one ask</p>
-			  	</div>
+				<div class="container">
+					<h1>About Us</h1>
+					<p class="lead">Who are you, may one ask</p>
+				</div>
 			</header>
 
 			<header>
 				<div class="bs-docs-social">
-				  	<div class="container">
-				    	<ul class="bs-docs-social-buttons">
-					      	<li class="follow-btn">
+					<div class="container">
+						<ul class="bs-docs-social-buttons">
+							<li class="follow-btn">
 
-					      	</li>
-				    	</ul>
-				  	</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</header>
 
@@ -127,23 +120,27 @@
 			</article>
 		</div>
 
+		<!--#######################
+			####### GALLERY #######
+			####################### -->
+
 		<div id="gallery" class="disabled-page">
 			<header class="jumbotron subhead" id="overview">
-			  	<div class="container">
-			    	<h1>Gallery</h1>
-			    	<p class="lead">All the different services we haven't build yet!</p>
-			  	</div>
+				<div class="container">
+					<h1>Gallery</h1>
+					<p class="lead">All the different services we haven't built yet!</p>
+				</div>
 			</header>
 
 			<header>
 				<div class="bs-docs-social">
-				  	<div class="container">
-				    	<ul class="bs-docs-social-buttons">
-					      	<li class="follow-btn">
+					<div class="container">
+						<ul class="bs-docs-social-buttons">
+							<li class="follow-btn">
 
-					      	</li>
-				    	</ul>
-				  	</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</header>
 
@@ -176,7 +173,6 @@
 								<a class="carousel-control left" href="#computerInfo" data-slide="prev">&lsaquo;</a>
 								<a class="carousel-control right" href="#computerInfo" data-slide="next">&rsaquo;</a>
 							</div>
-
 						</div>
 
 						<div class="span5 pull-left">
@@ -251,6 +247,20 @@
 				</div>
 			</article>
 		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="pull-right">
+					<a href="#">
+						Back to top
+					</a>
+				</p>
+				<p>
+					This website is built by <a href="https://twitter.com/bohansthomsen">Bo Thomsen</a> and <a href="http://twitter.com/fredefl">Frederik Lassen</a>,
+					we are based in Copenhagen, Denmark.
+				</p>
+			</div>
+		</footer>
 
 		<!--<script src="https://platform.twitter.com/widgets.js"></script>-->
 		<script src="js/jquery.min.js"></script>
