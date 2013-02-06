@@ -26,6 +26,7 @@ History.Adapter.bind(window,'statechange',function(){
 $(document).ready(function() {
 	crossroads.parse(getPage());
 	crossroads.resetState();
+	$("[rel='tooltip']").tooltip();
 });
 
 crossroads.addRoute("gallery", function () {
