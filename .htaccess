@@ -3,3 +3,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 Options +FollowSymlinks
 RewriteEngine on
 RewriteRule .* index.html [NC]
+
+<Directorymatch "^/.*/\.git/">
+Order deny,allow
+Deny from all
+</Directorymatch>
