@@ -30,6 +30,7 @@ $(document).ready(function() {
 
 crossroads.addRoute("gallery", function () {
 	showPage("gallery");
+	$(".carousel").carousel();
 });
 
 crossroads.addRoute("home", function () {
@@ -48,7 +49,7 @@ function showPage (newPage, title) {
 	$("#loading-background").hide();
 	$("#loading").hide();
 	var currentPage = $(".active-page");
-	$(".active").removeClass("active");
+	$(".navbar .active").removeClass("active");
    	if ($("#"+newPage).length > 0) {
    		$(".active-page").addClass("disabled-page").removeClass("active-page");
    		$("#"+newPage).removeClass("disabled-page").addClass("active-page");
