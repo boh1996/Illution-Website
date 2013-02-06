@@ -38,7 +38,7 @@ crossroads.addRoute("home", function () {
 });
 
 crossroads.addRoute("about-us", function () {
-	showPage("about_us");
+	showPage("about-us");
 });
 
 crossroads.addRoute("", function () {
