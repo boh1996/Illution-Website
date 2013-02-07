@@ -26,6 +26,11 @@
     .row-fluid .pull-right[class*="span"] { float: none; }
 }
 
+.justify {
+	text-align:justify;
+	text-justify:inter-word;
+}
+
 .label {
 	cursor: help;
 }
@@ -38,10 +43,14 @@
 	margin-bottom: -0px;
 }
 
-.emloyees {
+.ush-right {
 	margin-left: 5px;
 }
 
 .crew {
 	margin-bottom: -5px;
+}
+
+.push-down {
+	margin-top: 10px;
 }
