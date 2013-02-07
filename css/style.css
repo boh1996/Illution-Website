@@ -42,6 +42,10 @@
     }
 }
 
+.pull-down {
+	margin-top: 15px;
+}
+
 @media (min-width: 1200px) {
 	.social-icons {
 		margin-top:-15px;

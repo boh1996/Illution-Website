@@ -44,6 +44,10 @@ crossroads.addRoute("home", function () {
 	showPage("home");
 });
 
+crossroads.addRoute("blog", function () {
+	showPage("blog");
+});
+
 crossroads.addRoute("about-us", function () {
 	showPage("about-us");
 });
