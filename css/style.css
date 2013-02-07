@@ -26,6 +26,27 @@
     .row-fluid .pull-right[class*="span"] { float: none; }
 }
 
+@media (min-width: 768px) {
+	.social {
+		margin-top: -20px;
+    	margin-left:30px;
+    }
+}
+
+@media (min-width: 1200px) {
+	.social-icons {
+		margin-top:-15px;
+	}
+}
+
+.google-plus-red {
+	color: #F90101;
+}
+
+.social-icon {
+	margin-right: 10px;
+}
+
 .justify {
 	text-align:justify;
 	text-justify:inter-word;
