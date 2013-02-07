@@ -8,12 +8,16 @@ $('[data-page]').on("click",function () {
 	  	if (event.target.nodeName == 'A') {
 		   	url = event.target.getAttribute('data-page');
 
+		   	var hash = event.target.getAttribute('data-hash');
+
 		   	if ( url == "-back" ) {
 		   		History.back();
 		   		return;
 		   	}
 
-		    History.pushState(null,$("title").html(), root+url);
+		    History.pushState({
+		    	"hash" : hash 
+		    },$("title").html(), root+url);
 		}
 	}
 });

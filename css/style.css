@@ -30,16 +30,26 @@
     .row-fluid .pull-right[class*="span"] { float: none; }
 }
 
+@media (max-width: 1024px; max-width: 1200px) {
+	.person {
+		margin-bottom: 15px;
+	}
+}
+
 @media (min-width: 768px) {
 	.social {
-		margin-top: -20px;
-    	margin-left:30px;
+    	margin-left:20px;
     }
 }
 
 @media (min-width: 1200px) {
 	.social-icons {
 		margin-top:-15px;
+	}
+
+	.social {
+		margin-top: -20px;
+		margin-left:30px;
 	}
 }
 
