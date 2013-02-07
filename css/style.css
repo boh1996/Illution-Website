@@ -16,6 +16,10 @@
 	color:rgb(0, 109, 204);
 }
 
+.blue {
+	background-color:rgb(0, 109, 204) !important;
+}
+
 .padding-top {
 	padding-top: 20px;
 }
