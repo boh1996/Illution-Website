@@ -33,3 +33,15 @@
 .label-pointer {
 	cursor: pointer;
 }
+
+.minus-margin-bottom {
+	margin-bottom: -0px;
+}
+
+.emloyees {
+	margin-left: 5px;
+}
+
+.crew {
+	margin-bottom: -5px;
+}
