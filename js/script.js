@@ -35,7 +35,9 @@ $(document).ready(function() {
 
 crossroads.addRoute("gallery", function () {
 	showPage("gallery");
-	$(".carousel").carousel();
+	$(".carousel").carousel({
+		interval : 10000
+	});
 });
 
 crossroads.addRoute("home", function () {
