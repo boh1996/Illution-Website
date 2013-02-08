@@ -1,23 +1,19 @@
 var History = window.History;
-$('[data-page]').on("click",function () {
+$('[data-page]').on("click",function (event) {
 	var url = "";
 
 	if ( $(this).attr("data-toggle") == undefined ) {
-	  	event.preventDefault();
+	  	event.preventDefault ? event.preventDefault() : event.returnValue = false;
 
 	  	if (event.target.nodeName == 'A') {
 		   	url = event.target.getAttribute('data-page');
-
-		   	var hash = event.target.getAttribute('data-hash');
 
 		   	if ( url == "-back" ) {
 		   		History.back();
 		   		return;
 		   	}
 
-		    History.pushState({
-		    	"hash" : hash 
-		    },$("title").html(), root+url);
+		    History.pushState(null,$("title").html(), root+url);
 		}
 	}
 });

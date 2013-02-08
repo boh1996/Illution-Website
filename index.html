@@ -18,7 +18,7 @@
 			if ( window.location.host != "illution.dk" ) {
 				document.write('<script src="'+ location.origin + ':35729/livereload.js?snipver=2"><' + '/script>');
 			}
-			var root = location.origin + "/illution/";
+			var root = (location.origin) ? location.origin + "/illution/" : location.protocol + "//" + location.host + "/illution/";
 		</script>
 	</head>
 	<body>
