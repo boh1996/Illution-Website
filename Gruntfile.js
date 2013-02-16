@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 			}
 		},
 		htmlrefs: {
-			html: {
+			dist: {
 				src: 'index.html',
 				dest: 'index.compiled.html'
 			}
