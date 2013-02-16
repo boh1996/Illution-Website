@@ -9,8 +9,8 @@ module.exports = function(grunt) {
 		},
 		concat: {
 			js: {
-				src: 'js/*.min.js',
-				dest: 'js/concat.js'
+				src: ['js/jquery.min.js', 'js/bootstrap.min.js', 'js/signals.min.js', 'js/crossroads.min.js', 'js/jquery.history.min.js', 'js/script.min.js'],
+				dest: 'js/compiled.js'
 			},
 			css: {
 				src: 'css/*.css',
@@ -24,9 +24,9 @@ module.exports = function(grunt) {
 			}
 		},
 		htmlrefs: {
-			dist: {
+			html: {
 				src: 'index.html',
-				dest: 'index.compiled.html'
+				dest: 'compiled'
 			}
 		}
 	});
