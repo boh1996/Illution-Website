@@ -1,0 +1,20 @@
+{
+  "name": "Illution-Website",
+  "version": "2.0.0",
+  "description": "Illution-Website",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-css": "~0.5.3",
+    "grunt-htmlrefs": "~0.2.4",
+    "grunt": "~0.4.0rc8"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/boh1996/Illution-Website.git"
+  },
+  "author": "Illution",
+  "readmeFilename": "README.md",
+  "gitHead": "f334b49085f3dff47c1416e9da2c26f469807224"
+}
