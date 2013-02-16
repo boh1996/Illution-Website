@@ -9,16 +9,22 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 
 		<link rel="shortcut icon" href="favicon.ico">
+		<!-- build:css css/compiled.css -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/docs.css">
 		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+		<!-- endbuild -->
+		<!-- build:remove -->
 		<script type="text/javascript">
-			/*if ( window.location.host != "illution.dk" ) {
+			if ( window.location.host != "illution.dk" ) {
 				document.write('<script src="'+ location.origin + ':35729/livereload.js?snipver=2"><' + '/script>');
-			}*/
+			}
+		</script>
+		<!-- endbuild -->
+		<script type="text/javascript">
 			var root = (location.origin) ? location.origin + "/" : location.protocol + "//" + location.host + "/";
 		</script>
 	</head>
@@ -503,12 +509,13 @@
 			</div>
 		</footer>
 
-		<!--<script src="https://platform.twitter.com/widgets.js"></script>-->
+		<!-- build:js js/compiled.js -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/signals.min.js"></script>
 		<script src="js/crossroads.min.js"></script>
 		<script src="js/jquery.history.js"></script>
 		<script src="js/script.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>
