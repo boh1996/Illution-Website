@@ -8,5 +8,9 @@ Thumbs.db
 # Folder config file
 Desktop.ini
 
-# Ignore node_modules
+# Node and grunt ignore rules
 node_modules/
+js/concat.js
+css/concat.css
+js/compiled.js
+css/compiled.css
