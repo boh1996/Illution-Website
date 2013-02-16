@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 				dest: 'js/compiled.js'
 			},
 			css: {
-				src: 'css/*.css',
+				src: ['css/bootstrap.min.css', 'css/font-awesome.min.css', 'css/bootstrap-responsive.min.css', 'css/style.css', 'css/docs.css', 'css/scrollbar.css'],
 				dest: 'css/concat.css'
 			}
 		},
