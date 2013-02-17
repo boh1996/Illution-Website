@@ -1,3 +1,4 @@
+/* Script.js */
 var History = window.History;
 $('[data-page]').on("click",function (event) {
 	var url = "";
