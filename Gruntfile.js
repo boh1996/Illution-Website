@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		concat: {
 			js: {
-				src: ['js/jquery.min.js', 'js/bootstrap.min.js', 'js/signals.min.js', 'js/crossroads.min.js', 'js/jquery.history.min.js', 'js/script.js'],
+				src: ['js/jquery.min.js', 'js/bootstrap.min.js', 'js/signals.min.js', 'js/crossroads.min.js', 'js/jquery.history.min.js', 'js/script.js', 'js/ga.js'],
 				dest: 'js/concat.js'
 			},
 			css: {
