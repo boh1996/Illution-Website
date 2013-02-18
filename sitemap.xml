@@ -1,26 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<priority>1.0</priority>
-	<loc>https://illution.dk/</loc>
-	<lastmod>2012-01-02</lastmod>
-	<changefreq>always</changefreq>
-</url>
-<url>
-	<priority>0.7</priority>
-	<loc>https://illution.dk/ClickThis</loc>
-	<lastmod>2012-01-02</lastmod>
-	<changefreq>always</changefreq>
-</url>
-<url>
-	<priority>0.7</priority>
-	<loc>https://illution.dk/ClickThis/login</loc>
-	<lastmod>2012-01-02</lastmod>
-	<changefreq>always</changefreq>
-</url>
-<url>
-	<priority>0.7</priority>
-	<loc>https://ci.illution.dk/</loc>
-	<lastmod>2012-01-02</lastmod>
-	<changefreq>always</changefreq>
-</url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<priority>1.0</priority>
+		<loc>https://illution.dk/</loc>
+		<lastmod>2012-01-02</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<priority>0.7</priority>
+		<loc>https://illution.dk/ClickThis</loc>
+		<lastmod>2012-01-02</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<priority>0.7</priority>
+		<loc>https://illution.dk/ClickThis/login</loc>
+		<lastmod>2012-01-02</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<priority>0.7</priority>
+		<loc>https://ci.illution.dk/</loc>
+		<lastmod>2012-01-02</lastmod>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://illution.dk/gallery</loc>
+		<image:image>
+			<image:loc>https://illution.dk/img/ComputerInfo_1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://illution.dk/img/ClickThis_1.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://illution.dk/img/Bo-scaled.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://illution.dk/img/Frederik-scaled.jpg</image:loc>
+		</image:image>
+	</url>
 </urlset>
