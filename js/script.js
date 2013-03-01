@@ -3,18 +3,22 @@ var History = window.History;
 $('[data-page]').on("click",function (event) {
 	var url = "";
 
-	if ( $(this).attr("data-toggle") == undefined ) {
-	  	event.preventDefault ? event.preventDefault() : event.returnValue = false;
+	if ( $(this).attr("data-toggle") === undefined ) {
+		if (event.preventDefault) {
+			event.preventDefault();
+		} else {
+			event.returnValue = false;
+		}
 
-	  	if (event.target.nodeName == 'A') {
-		   	url = event.target.getAttribute('data-page');
+		if (event.target.nodeName == 'A') {
+			url = event.target.getAttribute('data-page');
 
-		   	if ( url == "-back" ) {
-		   		History.back();
-		   		return;
-		   	}
+			if ( url == "-back" ) {
+				History.back();
+				return;
+			}
 
-		    History.pushState(null,$("title").html(), root+url);
+			History.pushState(null,$("title").html(), root+url);
 		}
 	}
 });
@@ -62,11 +66,11 @@ function showPage (newPage, title) {
 	$("#loading").hide();
 	var currentPage = $(".active-page");
 	$(".navbar .active").removeClass("active");
-   	if ($("#"+newPage).length > 0) {
-   		$(".active-page").addClass("disabled-page").removeClass("active-page");
-   		$("#"+newPage).removeClass("disabled-page").addClass("active-page");
-   		$('a[data-page="'+newPage+'"]').parent("li").addClass("active");
-   	}
+	if ($("#"+newPage).length > 0) {
+		$(".active-page").addClass("disabled-page").removeClass("active-page");
+		$("#"+newPage).removeClass("disabled-page").addClass("active-page");
+		$('a[data-page="'+newPage+'"]').parent("li").addClass("active");
+	}
 }
 
 /**
@@ -83,7 +87,7 @@ function changeSubPage ( id, group ) {
 			$('.active-sub-page[data-page-group="'+group+'"]').addClass(".disabled-sub-page").removeClass(".active-sub-page");
 			$("#"+id).addClass(".active-sub-page").removeClass(".disabled-sub-page");
 		}
-	}	
+	}
 }
 
 /**
