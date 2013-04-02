@@ -1,0 +1,24 @@
+/* TEAM */
+
+	Web designer and Developer: Bo Thomsen
+	Email: bo@illution.dk
+	Google+: https://plus.google.com/114961707201712691377
+	LinkedIn: http://www.linkedin.com/in/bothomsen
+	Twitter: https://twitter.com/bohansthomsen
+	Github: https://github.com/boh1996
+	From: Copenhagen, Denmark
+
+	Web designer and Developer: Frederik Lassen
+	Email: frederik@illution.dk
+	Google+: https://plus.google.com/107006986847141444549
+	LinkedIn: http://www.linkedin.com/in/fredefl
+	Twitter: https://twitter.com/fredefl
+	Github: https://github.com/fredefl
+	From: Copenhagen, Denmark
+
+/* SITE */
+	Last updated: 2013/04/02
+	Language: English
+	Doctype: HTML5
+	IDE: Sublime Text 2
+	Technologies: jQuery, Bootstrap, Flatstrap, History.js, Font-Awesome, Crossroads.js, Signals.js
